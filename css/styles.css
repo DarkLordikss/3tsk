@@ -11,6 +11,10 @@ header {
     text-align: center;
     z-index: 100;
 }
+body {
+    display: flex;
+    height: 100%;
+}
 footer {
     position: fixed;
     height: 70px;
@@ -31,22 +35,36 @@ footer {
     height: 100%;
     left: 100px;
     margin-left: 5%;
+    margin-right: 0px;
 }
+
 .main {
     color: black;
     margin-top: 100px;
     position: relative;
-    right: -300px;
-    top: -200px;
-}
-@media only screen and (max-device-width: 600px) {
-    #colonum {
-        position: absolute;
-        top: 50px;
-        width: 100%
-        color:white:
+    right: -50px;
 
+}
+@media only screen and (max-width: 600px) {
+    #colonum {
+        top: 50px;
+        margin-left: 0px;
+        width: 106%;
+        color:white;
+        height: 10%;
+        display: block;
+        word-break: keep-all;
 	}
+    body {
+        flex-direction: column;
+    }
+    h3 {
+        display: inline;
+        padding: 10px 10px 10px 10px;
+    }
+    .main {
+        margin-top: 0;
+    }
 }
 #wo {
     height: 50px;
